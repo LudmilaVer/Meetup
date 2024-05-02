@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+font-family: 'Roboto', sans-serif;
+background: #FFFFFF; 
+}
+
+.location-container {
+padding: 11px 24px 11px 24px;
+height: 64px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-container input {
+  width: 300px;
+  height: 42px;
+
+ 
+}
+.left input { 
+height: 41px;
+padding-left: 20px;
+border: 1px solid grey;
+border-radius: 8px 0px 0px 8px;
+border-right: none;
+}
+
+#town {
+  border-radius: 0px;
+  
+}
+.left span {
+position: relative;
+margin-right: 41px;
+}
+
+#search_svg {
+
+top: 2px;
+width: 24px;
+height: 16px;
+position: relative;
+right: -22px;
+}
+.redsearch {
+  bottom: 19px;
+  width: 16px;
+  height: 16px;
+  margin-top: 11px;
+position: relative;
+align-items: center;
+left: -4px;
+border: none;
+background-color: white;
+}
+.redsearch:active {
+  cursor: pointer;
+  transform: translateX(1px);
+  transition: 0.07s;
+}
+
+
+.button:hover {
+cursor: pointer;
+background-color: #1f5d61;
+}
+.button {
+display: flex;
+align-items: center;
+width: 80px;
+height: 40px;
+cursor: pointer;
+padding: 7px 15px 7px 15px;
+border-radius: 8px;
+background: #00798a;
+color: white;
+font-size: 13px;
+border: none;
+
+}
+.treelog1 {
+display: flex;
+align-items: center;
+position: relative;
+border: none;
+cursor: pointer;
+background-color: white;
+}
+
+.treelog {
+display: flex;
+align-items: center;
+position: relative;
+border: none;
+cursor: pointer;
+background-color: white;
+}
+
+
+.treelog img {
+position: relative;
+margin-right: 5px;
+width: 20px;
+height: 20px;
+
+}
+.right {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 21px;
+
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  } }

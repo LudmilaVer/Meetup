@@ -1,0 +1,72 @@
+.box_velik {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.headerbild-container {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.button_meetup:hover {
+    cursor: pointer;
+    background-color: #137692;
+}
+.button_meetup {
+    width: 125px;
+    height: 40px;
+    top: 14px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 8px;
+    background-color: #00798a;
+    border: none;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+.boxtextleft {
+    width: 50%;
+}
+.boxtextleft h1 {
+font-size: 42px;
+font-weight: bold;
+}
+.boxtextleft p {
+    font-size: 16px;
+    margin-top: 24px;
+}
+/* .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  } */
+  
+  /* @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  } */

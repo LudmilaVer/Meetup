@@ -1,0 +1,70 @@
+@import url('./header.css');
+@import url('./headervelik.css');
+@import url('./events.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: #00798A;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+select {
+  padding: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  appearance: none;
+  width: 100%;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 200px;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+}
