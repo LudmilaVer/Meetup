@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prima</title>
+  <title>Meetup</title>
   <link rel="stylesheet" href="./styles.css">
-  
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./headervelik.css">
+  <link rel="stylesheet" href="./events.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
@@ -21,9 +23,7 @@
         <img id="search_svg" src="./img/search.svg" alt="" />
         <input id="events" type="text" placeholder="Search events" />
         <input id="town" placeholder="Mountain View, CA" type="text" />
-        <button class="redsearch"><img class="redsearch_svg" src="./img/redsearch.svg" alt="" /></button>
-
-
+        <img id="redsearch_svg" src="./img/redsearch.svg" alt="" />
       </div>
       <div class="right">
         <button class="treelog"><img id="eng_svg" src="./img/eng.svg" alt="" />English</button>
@@ -32,129 +32,203 @@
       </div>
   </header>
 
+
   <section class="headerbild">
     <div class="container">
       <div class="headerbild-container">
         <div class="boxtextleft">
           <h1>The people platform-Where interests become friendsships</h1>
-          <p class="interest">
+          <p>
             Whatever your interest, from hiking and reading to networking and
             skill sharing, there are thousands of people who share it on Meetup. Events are
             happening every day-sign up to join the fun.
           </p>
-          <button class="button_meetup">Join Meetup</button>
+          <button class="button_meetup"><a class="logo" href="#">Join Meetup</a>
+          </button>
         </div>
-
-        <div class="box_velik">
+        <div>
           <img class="vellik" src="./img/velik.svg" alt="">
         </div>
       </div>
-
     </div>
   </section>
 
-  <section class="eventsall">
-    <div class="eventstext-container">
-      <div class="eventstext-header">
-        <div class="events-left">
-          <events>
-            <h2>Events near</h2>
-            <a href="./events.html">Mountain View,CA </a>
-        </div>
-        </events>
-        <script type="module" src="main.js"></script>
-        <div class="events-right">
-          <button class="btnseeall">See all events</button>
-        </div>
-      </div>
-      <div class="events-bilds">
-        <div class="bilds-element">
-          <a href="#">
-            <img id="grid-img" src="./img/1 bild.png" alt="" />
-            <h3>Day Trading Idea and Strategy</h3>
-            Business (5km)
-            <p>
-              <img src="./img/MON,MAR 18.svg" alt="" /> Mon, Mar 18 · 7:00 PM PDT
-            </p>
-            <p>
-              <img src="./img/1going.svg" alt="" />1 going
-              <img src="./img/free.svg" alt="" />Free
-            </p>
-          </a>
-        </div>
-        <div class="bilds-element">
-          <a href="#">
-            <img id="grid-img" src="./img/2 bild.png" alt="" />
-            <h3>Let's Talk Networking: JPMorgan Chase in 
-              Palo Alto</h3>
-            Business (25km)
-            <p>
-              <img src="./img/MON,MAR 18.svg" alt="" /> Tue, Mar 19 · 5:00 PM PDT
-            </p>
-            <p>
-              <img src="./img/1going.svg" alt="" />41 going
-              <img src="./img/free.svg" alt="" />Free
-            </p>
-          </a>
-          <div class="bilds-element">
-            <a href="#">
-              <img id="grid-img" src="./img/3 bild.png" alt="" />
-              <h3>Tech Talks & Quiz: Next-
-                Gen Database Solutions
-                for Emerging Use Cases</h3>
-                Technology
-              <p>
-                <img src="./img/MON,MAR 18.svg" alt="" /> Wed, Mar 13 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/1going.svg" alt="" />40 going
-                <img src="./img/free.svg" alt="" />Free
-              </p>
-            </a>
+
+  <events>
+    <section class="eventsall">
+      <div class="container">
+        <div class="eventsall-container">
+          <div class="events-town">
+            <div class="events-left">
+              <h2>Events near</h2>
+              <a href="./events.html">Mountain View,CA
+                <img src="./img/Ручка.svg" alt="">
+              </a>
+            </div>
+
+
+            <div class="events-right">
+              <a href="#"><strong>See all events</strong></a>
+            </div>
+          </div>
+          <div class="events-bilds">
+
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/1 bild.png" alt="" />
+                <h3>Day Trading Idea and Strategy</h3>
+                <p>Business (5km)</p>
+                <span class="data"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Mon, Mar 18 · 7:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going1"> <img src="./img/1going.svg" alt="">
+                    1 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/2 bild.png" alt="" />
+                <h3>Let's Talk Networking: JPMorgan Chase in
+                  Palo Alto</h3>
+                <p>Business (25km)</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Tue, Mar 19 · 5:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    41 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/3 bild.png" alt="" />
+                <h3>Tech Talks & Quiz: Next-
+                  Gen Database Solutions
+                  for Emerging Use Cases</h3>
+                <p>Technology</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Wed, Mar 13 · 6:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    40 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <div class="bilds-element">
               <a href="#">
                 <img id="grid-img" src="./img/4 bild.png" alt="" />
-                <h3>Day Trading Idea and Strategy</h3>
-                Business (5km)
-                <p>
-                  <img src="./img/MON,MAR 18.svg" alt="" /> Mon, Mar 18 · 7:00 PM PDT
-                </p>
-                <p>
-                  <img src="./img/1going.svg" alt="" />1 going
-                  <img src="./img/free.svg" alt="" />Free
-                </p>
-              </a>
-              <div class="bilds-element">
-                <a href="#">
-                  <img id="grid-img" src="./img/5 bild.png" alt="" />
-                  <h3>Day Trading Idea and Strategy</h3>
-                  Business (5km)
-                  <p>
-                    <img src="./img/MON,MAR 18.svg" alt="" /> Mon, Mar 18 · 7:00 PM PDT
-                  </p>
-                  <p>
-                    <img src="./img/1going.svg" alt="" />1 going
-                    <img src="./img/free.svg" alt="" />Free
-                  </p>
-                </a>
-                <div class="bilds-element">
-                  <a href="#">
-                    <img id="grid-img" src="./img/6 bild.png" alt="" />
-                    <h3>Day Trading Idea and Strategy</h3>
-                    Business (5km)
-                    <p>
-                      <img src="./img/MON,MAR 18.svg" alt="" /> Mon, Mar 18 · 7:00 PM PDT
-                    </p>
-                    <p>
-                      <img src="./img/1going.svg" alt="" />1 going
-                      <img src="./img/free.svg" alt="" />Free
-                    </p>
-                  </a>
+                <h3>INFORMS San Francisco
+                  Chapter In-Person Event</h3>
+                <p>Health and Wellbeing (50 km)</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Thu, Mar 28 · 5:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    41 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-  </section>
 
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/5 bild.png" alt="" />
+                <h3>AI Wednesdays - Meet
+                  and Greet!</h3>
+                <p>Technology (5 km)</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Wed, Mar 13 · 6:30 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    29 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/6 bild.png" alt="" />
+                <h3>ROS By-The-Bay March
+                  2024</h3>
+                <p>Social Activities</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Thu, Mar 21 · 6:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    51 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/7 bild.png" alt="" />
+                <h3>Free Christian Singles'
+                  Dinner</h3>
+                <p>Hobbies and Passions (10 km)</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Fri, Mar 29 · 6:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    11 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="bilds-element">
+              <a href="#">
+                <img id="grid-img" src="./img/8 bild.png" alt="" />
+                <h3>In-person: Deep Dive into
+                  RAG Architectures (Food
+                  served)</h3>
+                <p>Hobbies and Passions (50 km)</p>
+                <span class="date"> <img src="./img/MON,MAR 18.svg" alt="">
+                  Thu, Mar 14 · 5:00 PM PDT</span>
+                <div class="span-data">
+                  <span class="going"> <img src="./img/1going.svg" alt="">
+                    16 going </span>
+                  <div class="span-data">
+                    <span class="free"> <img src="./img/free.svg" alt="">
+                      Free</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+    </section>
+  </events>
 
 
 

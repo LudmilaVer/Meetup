@@ -9,66 +9,51 @@ background: #FFFFFF;
 }
 
 .location-container {
-padding: 11px 24px 11px 24px;
-height: 64px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 11px 24px 11px 24px;
+height: 64px;
 }
-.left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.location-container img {
+  width: auto;
+}
+
+.Vector {
+  width: 118px;
+  height: 34px;
+  margin-right: 40px;
+  margin-top: 22px;
 }
 .location-container input {
   width: 300px;
   height: 42px;
-
- 
+  margin: -3px;
 }
-.left input { 
-height: 41px;
-padding-left: 20px;
+.left input {
+padding-left: 22px;
 border: 1px solid grey;
-border-radius: 8px 0px 0px 8px;
-border-right: none;
-}
-
-#town {
-  border-radius: 0px;
-  
 }
 .left span {
-position: relative;
-margin-right: 41px;
+  position: relative;
+  top: 14px;
+  left: 7px;
+  margin-right: 43px;
 }
 
 #search_svg {
-
-top: 2px;
-width: 24px;
-height: 16px;
-position: relative;
-right: -22px;
-}
-.redsearch {
-  bottom: 19px;
-  width: 16px;
+  top: 2px;
+  width: 14px;
   height: 16px;
-  margin-top: 11px;
+  position: relative;
+  right: -22px;
+}
+
+#redsearch_svg {
 position: relative;
-align-items: center;
-left: -4px;
-border: none;
-background-color: white;
+top: 16px;
+left: -3px;
 }
-.redsearch:active {
-  cursor: pointer;
-  transform: translateX(1px);
-  transition: 0.07s;
-}
-
-
 .button:hover {
 cursor: pointer;
 background-color: #1f5d61;
@@ -78,6 +63,7 @@ display: flex;
 align-items: center;
 width: 80px;
 height: 40px;
+top: 15px;
 cursor: pointer;
 padding: 7px 15px 7px 15px;
 border-radius: 8px;
@@ -85,30 +71,44 @@ background: #00798a;
 color: white;
 font-size: 13px;
 border: none;
+line-height: 18px;
 
 }
 .treelog1 {
 display: flex;
 align-items: center;
+font-size: 14px;
+margin-top: 15px;
+margin-bottom: 8px;
 position: relative;
 border: none;
-cursor: pointer;
 background-color: white;
 }
+.treelog1:hover:active {
+  background-color: rgb(247, 247, 247);
+  transform: translateX(5px);
+ }
 
 .treelog {
 display: flex;
 align-items: center;
+margin-top: 25px;
+margin-bottom: 15px;
 position: relative;
 border: none;
-cursor: pointer;
 background-color: white;
 }
+.treelog:hover:active{
+  transform: translateY(2px);
+  color: black;
+ }
 
 
 .treelog img {
 position: relative;
+align-items: center;
 margin-right: 5px;
+bottom: 2px;
 width: 20px;
 height: 20px;
 
@@ -116,33 +116,9 @@ height: 20px;
 .right {
 display: flex;
 align-items: center;
-justify-content: center;
 gap: 21px;
+margin-top: 22px;
 
 }
 
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  } }
