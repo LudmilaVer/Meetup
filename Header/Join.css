@@ -1,0 +1,101 @@
+.join-meetup {
+    margin-top: 92px;
+    padding: 36px 56px;
+    background-color: #97cad114;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.join-meetup__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sign-info {
+    color: white;
+}
+
+.join-button {
+    height: 40px;
+    background-color: rgba(227, 35, 89, 1);
+    color: white;
+    border-radius: 8px;
+    margin-top: 16px;
+    width: 192px;
+}
+.join-button:hover {
+    background-color: rgb(177, 15, 15);
+}
+
+@media (max-width: 992px) {
+    .join-meetup {
+        margin-top: 60px;
+    }
+
+    .join-meetup__container {
+        p {
+            font-size: 12px;
+        }
+
+        .join-button {
+            align-self: center;
+            width: 192px;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.join-meetup__section-header {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .join-meetup {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .join-meetup {
+        gap: 22px;
+        padding: 15px;
+
+        img {
+            max-width: 238px;
+            order: 1;
+        }
+    }
+
+    .join-meetup__section-header {
+        display: block;
+        order: 2;
+        align-self: flex-start;
+    }
+
+    .join-meetup__container {
+        order: 0;
+
+        h2 {
+            display: none;
+        }
+
+        button {
+            align-self: center;
+            width: 192px;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+}

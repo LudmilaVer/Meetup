@@ -2,6 +2,7 @@
 @import url('./headervelik.css');
 @import url('./events.css');
 @import url('./upcoming.css');
+@import url('./Join.css');
 
 * {
   margin: 0;
