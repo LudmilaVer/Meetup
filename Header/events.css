@@ -1,19 +1,34 @@
-.events-right:hover {
-  color: rgb(40, 145, 145);
+.events-bilds {
+  width: 66%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 36px;
+  gap: 36px;
+  text-decoration: none;
 }
-
+.events-right a{
+  font-size: 17px;
+  color: rgba(0, 121, 138, 1);
+  width: 105px;
+  height: 24px;
+}
+.events-right a:hover {
+  color:rgb(13, 94, 105);  ;
+}
 .bilds-element {
   font-size: 14px;
   margin-top: 8px;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .data {
   font-size: 14px;
 }
 
-.span-data {
-  margin-top: 8px;
+.bilds-element p {
+  display: flex;
+  gap: 16px;
 }
 
 .going1 img {
@@ -28,23 +43,36 @@
   margin-right: 2%;
 }
 
-.events-left a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  gap: 20px;
+.Events__title__find {
+  height: 44px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(151, 202, 209, 0.12);
+    padding: 12px 42px 8px 12px;
+    /* margin-bottom: 24px; */
+    margin-left: 8px;
+    color: #00798A;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.Events__title__h2 {
   font-weight: 600;
-  background-color: rgba(151, 202, 209, 0.12);
-  color: rgba(0, 121, 138, 1);
-  margin-left: 8px;
-  padding: 12px 12px 8px 12px;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+  padding-top: 4px;
+  padding: 12px 42px 8px 12px;
+  text-decoration: none;
 }
 
 .events-left a:hover {
   color: rgb(7, 146, 164);
 }
-
+#grid-img {
+  text-decoration: none;
+}
 .events-left {
   display: flex;
   align-items: center;
@@ -58,23 +86,10 @@
 }
 
 
-.events-right {
-  font-size: 18px;
-  display: flex;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: right;
-  color: #00798A;
-  background-color: white;
-  border: none;
-margin-right: -150px;
 
-}
 
-h2 {
-  font-size: 28px;
-  margin-left: -8px;
-}
+
+
 
 h3 {
   margin-top: 12px;
@@ -82,12 +97,7 @@ h3 {
   margin-right: 20%;
 }
 
-.events-bilds {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 36px;
-  gap: 56px;
-}
+
 
 .free svg {
   margin-top: 8px;
@@ -95,4 +105,23 @@ h3 {
   margin-right: 2px;
   margin-left: 16px;
 
+}@media (max-width: 1200px)
+{
+  .events-bilds {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 992px)
+{
+  .events-bilds {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-bilds {
+    grid-template-columns: 1fr;
+  }
 }

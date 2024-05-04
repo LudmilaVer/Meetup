@@ -1,0 +1,50 @@
+.upcoming-bilds {
+    width: 66%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    margin-top: 36px;
+    gap: 36px;
+    text-decoration: none;
+  }
+  .online-right a{
+    font-size: 17px;
+    color: rgb(4, 143, 161);
+    width: 105px;
+    height: 24px;
+  }
+  .online-right a:hover {
+    color:rgb(4, 91, 102);  ;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .upcoming-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-left: 8px;
+    font-size: 14px;
+   
+}
+.upcoming-element p {
+    text-decoration: none;
+    color:rgb(147, 146, 146) ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.upcoming-element h3 {
+text-decoration: none;
+    margin-top: 14px;
+    font-size: 20px;   
+}
+.free  svg {
+    margin-right: 2px;
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: -1px; 
+    
+   }

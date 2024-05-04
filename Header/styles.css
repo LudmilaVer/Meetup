@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./headervelik.css');
 @import url('./events.css');
+@import url('./upcoming.css');
 
 * {
   margin: 0;
