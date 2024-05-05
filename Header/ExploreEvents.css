@@ -41,36 +41,39 @@
 /* Адаптация под разные размеры экранов */
 @media (max-width: 1196px) {
   .Explorelink a {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 992px) {
   .ExploreEvents {
-      padding-top: 60px;
+    padding-top: 60px;
   }
   .gorisontal {
-      grid-template-columns: repeat(4, 155px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .Explorelink a {
-      font-size: 14px;
+    font-size: 14px;
   }
   .gorisontal {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 576px) {
   .Explorelink a {
-      font-size: 16px;
-  }
-  .ExploreEvents {
-      padding-top: 0;
+    font-size: 16px;
   }
   .gorisontal {
-      grid-template-columns: repeat(2, 135px);
-    }
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .gorisontal {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
