@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./events.css">
   <link rel="stylesheet" href="./upcoming.css">
   <link rel="stylesheet" href="./Join.css">
+  <link rel="stylesheet" href="./ExploreEvents.css">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
@@ -18,21 +19,25 @@
 
 <body>
 
+
   <header>
     <div class="location-container">
-      <div class="left">
-        <span><img id="Vector" src="./img/Vector.svg" alt=""></span>
-        <img id="search_svg" src="./img/search.svg" alt="" />
-        <input id="events" type="text" placeholder="Search events" />
-        <input id="town" placeholder="Mountain View, CA" type="text" />
-        <img id="redsearch_svg" src="./img/redsearch.svg" alt="" />
-      </div>
-      <div class="right">
-        <button class="treelog"><img id="eng_svg" src="./img/eng.svg" alt="" />English</button>
-        <button class="treelog1">Log in</button>
-        <button class="button">Sign up</button>
-      </div>
+      <a href="./index.html"><img src="./img/Vector.svg" alt="Meetup logo" /></a>
+      <form class="inputs-form">
+        <img class="input-img" src="./img/search.svg" alt="search" />
+        <input class="header-input" type="search" placeholder="Search events" />
+        <input class="header-input" type="text" placeholder="Neighborhood, city or zip" value="Mountain View, CA" />
+        <button class="header-search-button"><img src="./img/redsearch.svg" alt="" /></button>
+      </form>
+    </div>
+    <div class="header-button">
+      <button class="header-change"><img src="./img/eng.svg" alt="lang" />English</button>
+      <button class="header-login">Log in</button>
+      <button class="signup-button">Sign up</button>
+    </div>
   </header>
+  
+    
 
 
   <section class="headerbild">
@@ -332,14 +337,13 @@
 
   <div class="container">
 
-    <section class="join-meetup">
+    <section class="Joinmeetup">
       
-      <div class="join-meetup-container">
+      <div class="Joinmeetup-container">
        
         <h1 class="join-meetup-section-header">Join meet up</h1>
-        <p>
-          People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their
-          passions, together. Membership is free.
+        <p class="p">
+          People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
         </p>
         <button class="join-button">Sign up</button>
       </div>
@@ -350,75 +354,89 @@
   </div>
 
 
-  <section class="explore-top-categories">
+
+<div class="container">
+  <section class="ExploreEvents">
     <h2>Explore top categories</h2>
-    <ul>
-      <li>
-        <div class="explore-top-categories-link-container">
+    <div class="gorisontal">
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/travel-and-outdoors.svg" alt="travel and outdoors" />
+            <img src="./img/события/елка.svg" alt="travel and outdoors" />
             <p>Travel and Outdoor</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+    
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/social-activities.svg" alt="social activities" />
+            <img src="./img/события/арбуз.svg" alt="social activities" />
             <p>Social Activities</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+    
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/hobbies-and-passions.svg" alt="hobbies and passions" />
+            <img src="./img/события/утка.svg" alt="hobbies and passions" />
             <p>Hobbies and Passions</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/sport-and-fitness.svg" alt="sports and fitness" />
+            <img src="./img/события/мяч.svg" alt="sports and fitness" />
             <p>Sports and Fitness</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/health-and-wellbeign.svg" alt="health and wellbeign" />
+            <img src="./img/события/ЗеленыйЦветок.svg" alt="health and wellbeign" />
             <p>Health and Wellbeing</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+    
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/technology.svg" alt="technology" />
+            <img src="./img/события/робот.svg" alt="technology" />
             <p>Technology</p>
           </a>
-        </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+    </div>
+  
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/art-and-culture.svg" alt="art and culture" />
+            <img src="./img/события/маски.svg" alt="art and culture" />
             <p>Art and Culture</p>
           </a>
         </div>
-      </li>
-      <li>
-        <div class="explore-top-categories-link-container">
+      </div>
+    
+      <div class="gorisontal1">
+        <div class="Explorelink">
           <a href="#">
-            <img src="./images/icons/games.svg" alt="games" />
+            <img src="./img/события/домино.svg" alt="games" />
             <p>Games</p>
           </a>
         </div>
-      </li>
-    </ul>
+      </div>
+    
   </section>
+</div>
+
+
+
+
 
   <section class="popular">
     <div class="popular-container">

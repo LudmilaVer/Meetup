@@ -1,0 +1,76 @@
+.ExploreEvents {
+  padding-top: 100px;
+}
+
+.gorisontal {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.gorisontal1 {
+  max-width: 135px;
+  max-height: 112px;
+  border-radius: 8px;
+  background-color: #97cad114;
+  cursor: pointer;
+}
+
+.gorisontal1:hover {
+  background-color: #14aac431;
+  transition: all 0.5s;
+}
+
+.Explorelink {
+  padding: 15px;
+  max-height: 112px;
+  max-width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Адаптация под разные размеры экранов */
+@media (max-width: 1196px) {
+  .Explorelink a {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ExploreEvents {
+      padding-top: 60px;
+  }
+  .gorisontal {
+      grid-template-columns: repeat(4, 155px);
+  }
+}
+
+@media (max-width: 768px) {
+  .Explorelink a {
+      font-size: 14px;
+  }
+  .gorisontal {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .Explorelink a {
+      font-size: 16px;
+  }
+  .ExploreEvents {
+      padding-top: 0;
+  }
+  .gorisontal {
+      grid-template-columns: repeat(2, 135px);
+    }
+}

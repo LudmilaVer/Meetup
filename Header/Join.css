@@ -1,5 +1,5 @@
 
-.join-meetup {
+.Joinmeetup {
     margin-top: 92px;
     padding: 36px 56px;
     background-color: #97cad114;
@@ -10,11 +10,11 @@
     gap: 100px;
 }
 
-.join-meetup {
+.Joinmeetup {
     background-color: rgb(242, 248, 247);
 }
 
-.join-meetup-container {
+.Joinmeetup-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -47,7 +47,7 @@
         margin-top: 60px;
     }
 
-    .join-meetup-container {
+    .Joinmeetup-container {
         p {
             font-size: 12px;
         }
@@ -66,14 +66,14 @@
 }
 
 @media (max-width: 768px) {
-    .join-meetup {
+    .Joinmeetup {
         flex-direction: column-reverse;
         gap: 40px;
     }
 }
 
 @media (max-width: 576px) {
-    .join-meetup {
+    .Joinmeetup {
         gap: 22px;
         padding: 15px;
 
@@ -89,7 +89,7 @@
         align-self: flex-start;
     }
 
-    .join-meetup-container {
+    .Joinmeetup-container {
         order: 0;
 
         
