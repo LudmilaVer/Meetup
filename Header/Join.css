@@ -1,3 +1,4 @@
+
 .join-meetup {
     margin-top: 92px;
     padding: 36px 56px;
@@ -9,7 +10,11 @@
     gap: 100px;
 }
 
-.join-meetup__container {
+.join-meetup {
+    background-color: rgb(242, 248, 247);
+}
+
+.join-meetup-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -42,7 +47,7 @@
         margin-top: 60px;
     }
 
-    .join-meetup__container {
+    .join-meetup-container {
         p {
             font-size: 12px;
         }
@@ -56,8 +61,8 @@
     }
 }
 
-.join-meetup__section-header {
-    display: none;
+.join-meetup-section-header {
+    font-size: 28px;
 }
 
 @media (max-width: 768px) {
@@ -78,24 +83,15 @@
         }
     }
 
-    .join-meetup__section-header {
+    .join-meetup-section-header {
         display: block;
         order: 2;
         align-self: flex-start;
     }
 
-    .join-meetup__container {
+    .join-meetup-container {
         order: 0;
 
-        h2 {
-            display: none;
-        }
-
-        button {
-            align-self: center;
-            width: 192px;
-            height: 40px;
-            margin-top: 10px;
-        }
+        
     }
 }
