@@ -174,7 +174,7 @@ img {
   .events-near-events-list {
     column-gap: 36px;
     row-gap: 46px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .events-near-events-list a {
     display: flex;
