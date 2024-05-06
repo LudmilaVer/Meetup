@@ -11,7 +11,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+a {
+  color: inherit;
+}
 button {
   border: none;
   border-radius: 8px;
