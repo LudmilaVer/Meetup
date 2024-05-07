@@ -21,13 +21,13 @@
 .popular-cities-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; /* Равномерное распределение городов по горизонтали */
+  justify-content: space-around; /* Равномерное распределение городов по горизонтали */
   align-items: center;
-  gap: 42px;
+  gap: 20px;
 }
 
 .popular-cities-list img {
-  width:100%; /* Подразумевает круглые изображения, как элемент дизайна */
+  width: 100%; /* Подразумевает круглые изображения, как элемент дизайна */
   height: 100%;
   border-radius: 50%; /* Делаем изображения круглыми */
 }
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 10px;
 }
 
 .popular-cities-list a:hover {
@@ -49,20 +49,22 @@
 
 /* Адаптация к различным размерам экранов */
 @media (max-width: 1200px) {
-  .popular-cities-list {
-    justify-content: space-around;
+  .popular-cities-list a {
+    font-size: 18px; /* Уменьшаем размер шрифта для поддержания 5 элементов в строке */
   }
 }
 
 @media (max-width: 992px) {
   .popular-cities-list {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 }
 
 @media (max-width: 768px) {
-  .popular-cities-list {
-    flex-wrap: wrap;
+  .popular-cities-list a {
+    font-size: 16px;
   }
 }
 
@@ -70,5 +72,10 @@
   .popular-cities-list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .popular-cities-list img {
+    width: 70%px; /* Уменьшаем размер изображения для столбца */
+    height: 70%px;
   }
 }
