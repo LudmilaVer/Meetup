@@ -5,22 +5,22 @@
 }
 
 .popular-cities h2 {
-  font-size: 36px; /* Предположительно большие буквы для заголовка */
-  font-weight: bold; /* Более жирное начертание для заголовка */
-  padding-bottom: 16px; /* Отступ после заголовка */
+  font-size: 36px; /* Большие буквы для заголовка */
+  font-weight: bold; /* Жирное начертание для заголовка */
+  margin-bottom: 16px; /* Отступ после заголовка */
 }
 
 .popular-cities p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  padding-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* Стилизация списка городов */
 .popular-cities-list {
-  padding-top: 28px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly; /* Равномерное распределение городов по горизонтали */
   align-items: center;
   gap: 42px;
@@ -48,36 +48,27 @@
 }
 
 /* Адаптация к различным размерам экранов */
+@media (max-width: 1200px) {
+  .popular-cities-list {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 992px) {
   .popular-cities-list {
-    grid-template-columns: repeat(4, 1fr); /* Переход к 4 городам в строке */
+    justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
   .popular-cities-list {
-    grid-template-columns: repeat(3, 1fr); /* Переход к 3 городам в строке */
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 576px) {
-  .popular-cities {
-    padding-top: 48px;
-    p {
-      font-size: 12px;
-      padding-top: 8px;
-    }
-  }
-
   .popular-cities-list {
-    grid-template-columns: repeat(2, 1fr); /* Переход к 2 городам в строке */
-    row-gap: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .popular-cities-list {
-    display: grid; /* Переход к сетке для лучшей адаптивности */
-    grid-template-columns: 1fr; /* Один город в строке */
+    flex-direction: column;
+    align-items: center;
   }
 }
