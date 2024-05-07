@@ -1,79 +1,71 @@
-.ExploreEvents {
-  padding-top: 100px;
+.explore-categories {
+  margin-top: 64px;
 }
 
-.gorisontal {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
+.explore-title {
+  margin-bottom: 24px;
+}
+
+.explore-grids {
+  display: flex;
   gap: 16px;
-  padding-top: 24px;
+  align-items: center;
 }
 
-.gorisontal1 {
-  max-width: 135px;
-  max-height: 112px;
-  border-radius: 8px;
-  background-color: #97cad114;
-  cursor: pointer;
-}
-
-.gorisontal1:hover {
-  background-color: #14aac431;
-  transition: all 0.5s;
-}
-
-.Explorelink {
-  padding: 15px;
-  max-height: 112px;
-  max-width: 135px;
+.explore-grids a {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  width: 135px;
+  height: 112px;
+  padding: 22px 22.5px 16px 22.5px;
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.08);
+  align-items: center;
+  text-decoration: none; /* Удаление подчеркивания */
 }
 
-.a {
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.5;
+.explore-grids a img {
+  max-width: 100%; /* Обеспечивает адаптивность изображения */
+  max-height: 60px; /* Ограничивает высоту изображения */
+}
+
+.explore-grids a p {
   text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px; /* Добавляет небольшой отступ сверху для текста */
 }
 
-/* Адаптация под разные размеры экранов */
-@media (max-width: 1196px) {
-  .Explorelink a {
-    font-size: 12px;
+@media (max-width: 1400px) {
+  .explore-events {
+      max-width: 1156px;
+  }
+  .explore-grids {
+      justify-content: center;
   }
 }
 
-@media (max-width: 992px) {
-  .ExploreEvents {
-    padding-top: 60px;
-  }
-  .gorisontal {
-    grid-template-columns: repeat(4, 1fr);
+@media (max-width: 1200px) {
+  .explore-grids {
+      flex-wrap: wrap;
+      justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  .Explorelink a {
-    font-size: 14px;
-  }
-  .gorisontal {
-    grid-template-columns: repeat(3, 1fr);
+  .explore-grids {
+    padding: 0 43px;
   }
 }
 
 @media (max-width: 576px) {
-  .Explorelink a {
-    font-size: 16px;
+  .explore-events h2 {
+      font-size: 20px;
   }
-  .gorisontal {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 360px) {
-  .gorisontal {
-    grid-template-columns: repeat(1, 1fr);
+  .explore-grids {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
   }
 }

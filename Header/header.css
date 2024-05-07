@@ -115,7 +115,7 @@ header {
   }
 }
 
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   header {
     flex-direction: column-reverse;
   }
@@ -123,19 +123,15 @@ header {
   .location-container {
     padding-top: 15px;
     width: 100%;
-    a {
-      display: none;
-    }
   }
-
+  .location-container a {
+    display: none;
+  }
   .header-button {
     display: flex;
     justify-content: space-between;
-    a {
-      display: block;
-    }
   }
-
+ 
   .inputs-form {
     width: 100%;
   }
@@ -148,10 +144,23 @@ header {
 
   .header-button {
     gap: 10px;
-    .header-change,
-    .header-login,
-    .signup-button {
+  }
+  .header-button .header-change,
+  .header-button .header-login,
+  .header-button .signup-button {
       font-size: 12px;
     }
+  }
+
+.logo-min {
+  display: none;
+}
+.header-button-container {
+  display: flex;
+  gap: 22px;
+}
+@media (max-width: 768px) {
+  .logo-min {
+    display: block;
   }
 }

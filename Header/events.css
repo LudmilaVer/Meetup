@@ -210,7 +210,7 @@ img {
   .events-near-events-list {
     column-gap: 36px;
     row-gap: 36px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr;
   }
   /* .events-near-events-list {
     grid-template-columns: 1fr;
