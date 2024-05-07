@@ -4,6 +4,7 @@
 @import url('./upcoming.css');
 @import url('./Join.css');
 @import url('./ExploreEvents.css');
+@import url('./popular.css');
 
 * {
   margin: 0;

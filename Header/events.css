@@ -174,7 +174,7 @@ img {
   .events-near-events-list {
     column-gap: 36px;
     row-gap: 46px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .events-near-events-list a {
     display: flex;
@@ -207,12 +207,16 @@ img {
   .events-near-events-list-image {
    width: 150px;
   }
-
   .events-near-events-list {
+    column-gap: 36px;
+    row-gap: 36px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .events-near-events-list {
     grid-template-columns: 1fr;
     column-gap: 36px;
     row-gap: 36px;
-  }
+  } */
   .events-near-events-list a {
     flex-direction: row;
     gap: 16px;
@@ -246,7 +250,11 @@ img {
     gap: 20px;
   }
 
- 
+  .events-near-events-list {
+    grid-template-columns: 1fr;
+    column-gap: 36px;
+    row-gap: 36px;
+  }
   .see-all-events-link {
     width: auto;
     margin-top: 0;

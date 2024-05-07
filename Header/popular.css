@@ -1,0 +1,83 @@
+/* Общие стили для раздела с популярными городами */
+.popular-cities {
+  padding-top: 64px;
+  text-align: left;
+}
+
+.popular-cities h2 {
+  font-size: 36px; /* Предположительно большие буквы для заголовка */
+  font-weight: bold; /* Более жирное начертание для заголовка */
+  padding-bottom: 16px; /* Отступ после заголовка */
+}
+
+.popular-cities p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 16px;
+}
+
+/* Стилизация списка городов */
+.popular-cities-list {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-evenly; /* Равномерное распределение городов по горизонтали */
+  align-items: center;
+  gap: 42px;
+}
+
+.popular-cities-list img {
+  width: 80px; /* Подразумевает круглые изображения, как элемент дизайна */
+  height: 80px;
+  border-radius: 50%; /* Делаем изображения круглыми */
+}
+
+.popular-cities-list a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.popular-cities-list a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптация к различным размерам экранов */
+@media (max-width: 992px) {
+  .popular-cities-list {
+    grid-template-columns: repeat(4, 1fr); /* Переход к 4 городам в строке */
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-cities-list {
+    grid-template-columns: repeat(3, 1fr); /* Переход к 3 городам в строке */
+  }
+}
+
+@media (max-width: 576px) {
+  .popular-cities {
+    padding-top: 48px;
+    p {
+      font-size: 12px;
+      padding-top: 8px;
+    }
+  }
+
+  .popular-cities-list {
+    grid-template-columns: repeat(2, 1fr); /* Переход к 2 городам в строке */
+    row-gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-cities-list {
+    display: grid; /* Переход к сетке для лучшей адаптивности */
+    grid-template-columns: 1fr; /* Один город в строке */
+  }
+}
