@@ -1,16 +1,18 @@
-.footer {
+.footer-section {
     background: rgba(33, 33, 33, 1);
     padding: 0 196px;
     padding-bottom: 40px;
 }
 
-.footer-get-started {
+.footer-intro {
     display: flex;
     align-items: center;
     gap: 32px;
+    margin-top: 80px !important; /* Используем !important для тестирования */
+    margin-bottom: 35px;
 }
 
-.footer-get-started h4 {
+.footer-intro h4 {
     margin-top: 34px;
     margin-bottom: 35px;
     font-size: 16px;
@@ -18,31 +20,34 @@
     color: rgba(246, 247, 248, 1);
 }
 
-.footer-get-started button {
+.footer-intro button {
     width: 119px;
     height: 44px;
     padding: 10px 13.8px 10px 14px;
     border-radius: 6px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    color: rgba(255, 255, 255, 1);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
     background-color: transparent;
+  
+
 }
 
-.footer-grids {
-    border-top: 1px solid rgba(112, 112, 112, 1);
+.footer-columns {
+    border-top: 1px solid #707070;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 24px;
 }
 
-.title {
-    font-size: 16px;
+.section-title {
     font-weight: 400;
-    color: rgba(246, 247, 248, 1);
-    margin-top: 24px;
+    font-size: 16px;
+    color: #F6F7F8;
     margin-bottom: 10px;
+    margin-top: 24px;
 }
 
-.footer-grids a {
+.footer-columns a {
     font-size: 14px;
     font-weight: 400;
     color: rgba(197, 196, 196, 1);
@@ -50,68 +55,98 @@
     margin-bottom: 17px;
 }
 
-.footer-grids-column {
+.footer-column {
     display: flex;
     flex-direction: column;
 }
 
-.footer-logos .title {
+.social-media-section .section-title {
     margin-top: 24px;
 }
 
-.footer-logos-logos {
+.social-media-icons {
     display: flex;
     gap: 34.5px;
 }
 
-.footer-logos {
+.social-media-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 24px;
 }
 
-.footer-end {
+.app-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom {
     display: flex;
     align-items: center;
     gap: 24px;
     margin-top: 50px;
 }
 
-.footer-end p {
+.footer-bottom p {
     font-size: 14px;
     font-weight: 400;
+    color: #FFFFFF;
     line-height: 20px;
-    color: rgba(255, 255, 255, 1);
 }
 
-.footer-end a {
+.footer-bottom a {
     font-size: 14px;
+    color: #C5C4C4;
+    text-decoration: none;
     font-weight: 400;
     line-height: 20px;
-    color: rgba(197, 196, 196, 1);
 }
-
-
-@media (max-width: 1400px) {}
-
-@media (max-width: 1200px) {}
 
 @media (max-width: 992px) {
-    .footer {
+    .footer-section {
         padding: 0 18px;
         padding-bottom: 36px;
     }
 }
 
 @media (max-width: 768px) {
-    .footer-logos-rightside {
-        display: none;
+    .footer-intro {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
     }
-    .footer-end a {
-        display: none;
+
+    .footer-intro button {
+        margin-top: 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .social-media-section, .app-links {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 576px) {
+    .footer-section {
+        padding: 0 10px;
+        padding-bottom: 24px;
+    }
 
+    .footer-columns a {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom a {
+        margin-top: 10px;
+    }
 }
