@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: space-around; /* Равномерное распределение городов по горизонтали */
   align-items: center;
-  gap: 20px;
+  gap: 36px;
 }
 
 .popular-cities-list img {
