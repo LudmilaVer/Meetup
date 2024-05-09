@@ -2,54 +2,55 @@ import { eventsStore } from "./data.js";
 import { createDomElement } from "./utils.js";
 import { formatDate } from "./utils.js";
 
-const allEvents = document.querySelector(".events__filtred-events")
-const eventTypeSelect = document.getElementById("event-type")
-const eventDistanceSelect = document.getElementById("event-distance")
-const eventCategorySelect = document.getElementById("event-category")
 
-function createEvent(arr) {
-  arr.forEach((eventElement) => {
-    const eventsLink = createDomElement({ tag: "a", className: "events__events-link", href: "#" })
-    allEvents.append(eventsLink)
-    const eventsImages = createDomElement({ tag: "div", className: "events__events-images" })
-    eventsLink.append(eventsImages)
-    const eventImage = createDomElement({ tag: "img", className: "events__events-image", src: eventElement.image })
-    eventsImages.append(eventImage)
-    const eventsDescription = createDomElement({ tag: "div", className: "events__events-description" })
-    eventsLink.append(eventsDescription)
-    const eventsDate = createDomElement({ tag: "p", className: "events__events-date", textValue: formatDate(eventElement.date) })
-    const eventsTitle = createDomElement({ tag: "h3", className: "events__events-title", textValue: eventElement.title })
-    const eventsCategory = createDomElement({ tag: "p", className: "events__events-category", textValue: eventElement.category })
-    eventsDescription.append(eventsDate, eventsTitle, eventsCategory);
-    if (eventElement.type === "online") {
+const allcontainer = document.querySelector(".filters")
+const selectevents2 = document.getElementById("eventselect")
+const distanceselect = document.getElementById("selectdistance")
+const typeselect = document.getElementById("selecttype")
+
+function createEvent(eventsarr) {
+  eventsarr.forEach((dataevents2) => {
+    const linkevents2 = createDomElement({ tag: "a", className: "events2link", href: "#" })
+    allcontainer.append(linkevents2)
+    const bildsevent = createDomElement({ tag: "div", className: "eventbilds" })
+    linkevents2.append(bildsevent)
+    const events2bilds = createDomElement({ tag: "img", className: "bildsevents2", src: dataevents2.image })
+    bildsevent.append(events2bilds)
+    const eventVisual = createDomElement({ tag: "div", className: "Visualevent" })
+    linkevents2.append(eventVisual)
+    const dateevents2 = createDomElement({ tag: "p", className: "events2date", textValue: formatDate(dataevents2.date) })
+    const nameevents2 = createDomElement({ tag: "h3", className: "events2name", textValue: dataevents2.title })
+    const typeevents2 = createDomElement({ tag: "p", className: "events2type", textValue: dataevents2.category })
+    eventVisual.append(dateevents2, nameevents2, typeevents2);
+    if (dataevents2.type === "online") {
       const onlineEventImage = createDomElement({
         tag: "img",
-        className: "events__events-online-event-image",
+        className: "jnlineevents2",
         src: "./img/события/Online Event.svg",
         alt: "online event",
       })
-      eventsDescription.append(onlineEventImage)
+      eventVisual.append(onlineEventImage)
     }
-    if (eventElement.attendees) {
-      const eventsAtendees = createDomElement({
+    if (dataevents2.attendees) {
+      const atendes = createDomElement({
         tag: "p",
-        className: "events__events-atendees",
-        textValue:`${eventElement.attendees} attendees`,
+        className: "atendesevents2",
+        textValue:`${dataevents2.attendees} attendees`,
       })
-      eventsDescription.append(eventsAtendees)
+      eventVisual.append(atendes)
     }
   })
 }
 function clearEvents() {
-  while (allEvents.firstChild) {
-    allEvents.removeChild(allEvents.firstChild);
+  while (allcontainer.firstChild) {
+    allcontainer.removeChild(allcontainer.firstChild);
   }
 }
-function filterEvents(arr) {
-  const selectedType = eventTypeSelect.value === "any" ? undefined : eventTypeSelect.value
-  const selectedDistance = eventDistanceSelect.value === "any" ? undefined : eventDistanceSelect.value
-  const selectedCategory = eventCategorySelect.value === "any" ? undefined : eventCategorySelect.value
-  let filteredArr = arr
+function filterEvents(eventsarr) {
+  const selectedType = selectevents2.value === "any" ? undefined : selectevents2.value
+  const selectedDistance = distanceselect.value === "any" ? undefined : distanceselect.value
+  const selectedCategory = typeselect.value === "any" ? undefined : typeselect.value
+  let filteredArr = eventsarr
   if (selectedType) {
     filteredArr = filteredArr.filter((element) => element.type === selectedType)
   }
@@ -62,7 +63,7 @@ function filterEvents(arr) {
   clearEvents()
   createEvent(filteredArr)
 }
-eventTypeSelect.addEventListener("change", () => {filterEvents(eventsStore)})
-eventDistanceSelect.addEventListener("change", () => {filterEvents(eventsStore)})
-eventCategorySelect.addEventListener("change", () => {filterEvents(eventsStore)})
+selectevents2.addEventListener("change", () => {filterEvents(eventsStore)})
+distanceselect.addEventListener("change", () => {filterEvents(eventsStore)})
+typeselect.addEventListener("change", () => {filterEvents(eventsStore)})
 createEvent(eventsStore)
