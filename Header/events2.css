@@ -10,7 +10,7 @@
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
-    margin-top: 81px;
+    /* margin-top: 81px; */
 }
 
 .searchBtn {
@@ -25,9 +25,11 @@
     text-decoration-thickness: 4px;
     text-underline-offset: 4px;
     margin-bottom: 12px;
+    width: fit-content;
 }
 
 select {
+    padding: 16px, 30px, 16px, 16px;
     appearance: none;
     width: fit-content;
     font-size: 14px;
@@ -36,6 +38,7 @@ select {
     border-radius: 40px;
     cursor: pointer;
     outline: none;
+
 }
 
 #arrow1 {
@@ -62,7 +65,7 @@ select {
     position: relative;
     pointer-events: none;
     top: -25px;
-    left: 175px;
+    left: 115px;
     transform: translate(0, -50%);
     width: 14px;
     height: 14px;

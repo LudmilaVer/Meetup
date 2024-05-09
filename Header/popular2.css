@@ -64,12 +64,12 @@
 }
 
 @media (max-width: 768px) {
-    /* .popular-right {
+    .popular-right {
         width: 100%;
-    }
+    } 
     .popular-left {
         width: 100%;
-    } */
+    }
     .popular-alles {
         flex-direction: column;
     }
@@ -77,12 +77,12 @@
 }
 
 @media (max-width: 576px) {
-    .popular-right {
+    /* .popular-right {
         width: 100%;
     }
     .popular-left {
         width: 100%;
-    }
+    } */
 
     .popular-alles a {
         padding: 19.91px 69.69px 14.93px 14.93px;
