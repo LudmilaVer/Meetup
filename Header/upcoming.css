@@ -1,9 +1,9 @@
-.events-near {
+  .events-near {
   padding-top: 120px;
 }
 ul {
-  list-style-type: none; /* Убирает маркеры у всех списков */
-}
+  list-style-type: none; 
+} 
 .events-near__header {
   display: flex;
   justify-content: space-between;
@@ -264,4 +264,4 @@ p {
   .see-all-events-link {
     display: none;
   }
-}
+}   

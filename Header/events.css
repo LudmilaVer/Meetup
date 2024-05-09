@@ -3,6 +3,7 @@
 }
 .event-near-event-list-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 8px; /* Расстояние между иконками и текстом */
 }
@@ -131,6 +132,7 @@ img {
   display: flex;
   align-items: center;
   gap: 15px;
+  color: rgb(58, 35, 5);
   
 }
 
@@ -156,6 +158,25 @@ img {
   font-weight: 700;
   line-height: 1.2;
 }
+
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.time-line {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.time-icon {
+ 
+  width: 22px;
+} 
+
+
 
 @media (max-width: 992px) {
   .events-near {
@@ -194,7 +215,9 @@ img {
   .events-near-activity-kind {
     padding-top: 12px;
   }
-
+.events-activity-distance {
+  font-size: 14px;
+}
   .events-near-online-section {
     padding-top: 60px;
   }
@@ -249,6 +272,22 @@ img {
     flex-direction: column;
     gap: 20px;
   }
+.time-icon {
+  display: none;
+} 
+.events-near-going-ticket-container {
+  display: none;
+}
+.events-activity-distance {
+  order: 0;
+  display: flex;
+  align-items: center;
+  font-size: 8.58px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 6px;
+  color: rgba(124, 111, 80, 1);
+}
 
   .events-near-events-list {
     grid-template-columns: 1fr;
@@ -259,4 +298,17 @@ img {
     width: auto;
     margin-top: 0;
   }
+
+ .events-near-events-list-image {
+  width: 97px;
+  height: 55px;
+ }
+.time-line {
+  color: rgba(124, 111, 80, 1);
+  font-size: 8.58px;
+  order: -1;
+}
+.events-box-title {
+  font-size: 9.81px;
+}
 }
