@@ -1,4 +1,4 @@
-.events-select {
+.events2-area {
     display: flex;
     gap: 15px;
     justify-content: space-between;
@@ -6,14 +6,14 @@
     padding-bottom: 60px;
 }
 
-.events__events-search-container h2 {
+.events2searchBtn h2 {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
     margin-top: 81px;
 }
 
-.events__events-searchBtn {
+.searchBtn {
     padding-top: 16px;
     color: rgba(0, 121, 138, 1);
     font-size: 20px;
@@ -38,7 +38,7 @@ select {
     outline: none;
 }
 
-#events__select-arrow-1 {
+#arrow1 {
     position: relative;
     pointer-events: none;
     top: -25px;
@@ -48,7 +48,7 @@ select {
     height: 14px;
 }
 
-#events__select-arrow-2 {
+#arrow2 {
     position: relative;
     pointer-events: none;
     top: -25px;
@@ -58,7 +58,7 @@ select {
     height: 14px;
 }
 
-#events__select-arrow-3 {
+#arrow3 {
     position: relative;
     pointer-events: none;
     top: -25px;
@@ -68,7 +68,7 @@ select {
     height: 14px;
 }
 
-.events-select__container {
+.selectevents2 {
     display: flex;
     gap: 18px;
 }
@@ -87,7 +87,7 @@ select {
     gap: 16px;
 }
 
-.events_events-link:hover .events_events-title {
+.events2link:hover .events2title {
     text-decoration: underline;
 }
 
@@ -107,7 +107,7 @@ select {
     position: relative;
 }
 
-.jnlineevents2 {
+.onlineevents2 {
     position: absolute;
     left: -170px;
     top: 5px;
@@ -142,34 +142,34 @@ select {
     padding-top: 28px;
 }
 
-.events__map {
+.map2 {
     max-width: 350px;
 }
 
-.events__map h3 {
+.map2 h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.4;
 }
 
-.events__map p {
+.map2 p {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.3;
 }
 
-.events__map-image-container {
+.events2map {
     padding-top: 14px;
     width: clamp(250px, 100%, 350px);
     position: relative;
 }
 
-.events__map-image {
+.events2bilds {
     width: 100%;
     height: 285px;
 }
 
-.events__map-button {
+.events2button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -183,11 +183,11 @@ select {
     transform: translate(-50%, -50%);
 }
 
-.events__map-button div {
+.events2button div {
     color: rgba(0, 121, 138, 1);
 }
 
-.events__map-close-button {
+.mapbutton {
     position: absolute;
     right: 15px;
     top: 25px;
@@ -198,7 +198,7 @@ select {
 }
 
 @media (max-width: 992px) {
-    .events__map {
+    .map2 {
         display: none;
     }
 }
@@ -208,23 +208,23 @@ select {
         padding-top: 22px;
     }
 
-    .events__events-search-container h2 {
+    .events2searchBtn h2 {
         font-size: 25px;
         margin-top: 22px;
     }
 
-    .events-select__container {
+    .selectevents2 {
         width: calc(100vw - 30px);
         overflow: scroll;
         padding: 1px 0 10px 1px;
     }
 
-    .events__custom-select {
+    .custom {
         padding-top: 10px;
         position: relative;
     }
 
-    .events__custom-select select {
+    .custom select {
         appearance: none;
         width: fit-content;
         font-size: 14px;
@@ -275,7 +275,7 @@ select {
         padding-left: 4px;
     }
 
-    .jnlineevents2 {
+    .onlineevents2 {
         position: static;
         width: 80px;
     }

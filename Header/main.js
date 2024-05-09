@@ -25,7 +25,7 @@ function createEvent(eventsarr) {
     if (dataevents2.type === "online") {
       const onlineEventImage = createDomElement({
         tag: "img",
-        className: "jnlineevents2",
+        className: "onlineevents2",
         src: "./img/события/Online Event.svg",
         alt: "online event",
       })
